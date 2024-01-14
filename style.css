@@ -12,6 +12,11 @@ li{
     background-color: #ffffff;
 }
 
+a{
+    text-decoration: none;
+    position: relative;
+    transition: opacity 300ms ease;
+}
 
 /*Since background is not white, need to reset color to white for all relevtant classes in nav bar*/
 
@@ -46,7 +51,7 @@ a, li, .nav__container, .nav__container--mini,
     height: calc(100vh - 16);
     position: fixed;
     */
-    height: 180px;
+    height: 200px;
     margin: 0 auto;
     overflow: hidden;
     top: 0;
@@ -72,24 +77,50 @@ a, li, .nav__container, .nav__container--mini,
     display: flex;
 }
 
-.nav__link{
-    text-decoration: none;
-    margin: 0 16px;
-    padding: 8px 20px;
+.nav__link{  
+    margin: 8px 36px;
     font-size: 28px;
+    color: black;
 }
+
+.nav__link:after{
+    content: "";
+    position: absolute; 
+    height: 3px;
+    width: 0;
+    bottom: -3px;
+    right: 0;
+    transition: all 300ms ease;
+    background-color: black;
+}
+
+.nav__link:hover:after{
+    width: 100%;
+    left: 0;
+}
+
 
 .nav__btn{
     font-size: 28px;
-    padding: 16px 24px;
+    padding: 16px 40px;
+    cursor: pointer;
     color: white;
     background-color: rgb(44, 44, 44);
-    border-radius: 20px;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    transition: all 300ms ease;
 }
 
 .nav__btn:hover{
-    
+    transform: scale(1.05);
+    background-color: rgb(255, 132, 132);
 }
+
+.nav__btn:active{
+    transform: translateY(4px);
+}
+
 
 
 /*
