@@ -132,5 +132,5 @@ a, li, .nav__container, .nav__container--mini,
     margin-top: 8px;
     color: rebeccapurple;
     background-color: red;
-    height: 40px;
+    height: calc(100vh - 50vh);
 }
