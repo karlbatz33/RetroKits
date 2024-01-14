@@ -1,7 +1,105 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 *{
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+li{
+    list-style: none;
+    background-color: #ffffff;
+}
+
+
+/*Since background is not white, need to reset color to white for all relevtant classes in nav bar*/
+
+/* NOTE: WE DON'T NEED THIS BECAUSE NAV BAR ISN'T FIXED ANYMORE.
+a, li, .nav__container, .nav__container--mini, 
+.nav__link, .nav__btn, .main__logo--wrapper{
+    background-color: #ffffff;
+}
+*/
+
+#landing{
+    margin-top: 0;
+    width: 100%;
+}
+
+.row{
+    width: 100%;
+}
+
+
+/*
+    Navigation Bar
+*/
+
+
+.nav__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /*
+    height: calc(100vh - 16);
+    position: fixed;
+    */
+    height: 180px;
+    margin: 0 auto;
+    overflow: hidden;
+    top: 0;
+}
+
+.nav__container--mini{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    width: calc(100%/3);
+}
+
+.main__logo--wrapper{
+    padding: 16px;
+}
+
+.logo{
+    width: 250px;
+}
+
+.nav__links{
+    display: flex;
+}
+
+.nav__link{
+    text-decoration: none;
+    margin: 0 16px;
+    padding: 8px 20px;
+    font-size: 28px;
+}
+
+.nav__btn{
+    font-size: 28px;
+    padding: 16px 24px;
+    color: white;
+    background-color: rgb(44, 44, 44);
+    border-radius: 20px;
+}
+
+.nav__btn:hover{
+    
+}
+
+
+/*
+    Header
+*/
+
+.header-brah{
+    /* only for fixed nav bar --> margin-top: calc(16vh); */
+    margin-top: 8px;
+    color: rebeccapurple;
+    background-color: red;
+    height: 40px;
 }
