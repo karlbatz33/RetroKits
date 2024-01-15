@@ -36,11 +36,9 @@ a, li, .nav__container, .nav__container--mini,
     width: 100%;
 }
 
-
 /*
     Navigation Bar
 */
-
 
 .nav__container{
     display: flex;
@@ -99,7 +97,6 @@ a, li, .nav__container, .nav__container--mini,
     left: 0;
 }
 
-
 .nav__btn{
     font-size: 28px;
     padding: 16px 40px;
@@ -114,7 +111,7 @@ a, li, .nav__container, .nav__container--mini,
 
 .nav__btn:hover{
     transform: scale(1.05);
-    background-color: rgb(255, 132, 132);
+    background-color: rgb(224, 224, 224);
 }
 
 .nav__btn:active{
@@ -124,13 +121,38 @@ a, li, .nav__container, .nav__container--mini,
 
 
 /*
-    Header
+    Nav Header
 */
 
 .header-brah{
     /* only for fixed nav bar --> margin-top: calc(16vh); */
-    margin-top: 8px;
+    margin-top: 0px;
     color: rebeccapurple;
-    background-color: red;
+    background-color: rgb(224, 224, 224);
     height: calc(100vh - 50vh);
 }
+
+  .carousel-container {
+    width: 100%;
+    height: calc(100vh - 50vh);
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel-slide {
+    display: none;
+    opacity: 0;
+    transition: all 2000ms ease-in-out;
+  }
+  
+  .img__size {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: calc(100vh - 70vh);
+    width: 100vw;
+    height: calc(100vh - 20vh);
+  }
