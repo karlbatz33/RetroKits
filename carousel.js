@@ -37,16 +37,16 @@ document.addEventListener("DOMContentLoaded", function() {
         // Set a timeout to start fading out after a delay (adjust the time as needed)
         setTimeout(() => {
             slides[currentSlide - 1].style.opacity = 0;
-        }, 3000); // 3000 milliseconds (3 seconds) in this example, adjust as needed
+        }, 4000); // 4000 milliseconds (4 seconds) in this example, adjust as needed
     }
   
     // Function to show the next slide
     function nextSlide() {
-      showSlide(currentSlide += 1);
+        showSlide(currentSlide += 1);
     }
   
     // Set interval for automatic sliding (adjust the time as needed)
-    setInterval(nextSlide, 5000); // 5000 milliseconds (5 seconds) in this example, adjust as needed
+    setInterval(nextSlide, 6000); // 6000 milliseconds (6 seconds) in this example, adjust as needed
   
     // Display the initial slide when the page loads
     showSlide(currentSlide);

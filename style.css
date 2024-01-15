@@ -36,6 +36,12 @@ a, li, .nav__container, .nav__container--mini,
     width: 100%;
 }
 
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /*
     Navigation Bar
 */
@@ -156,3 +162,65 @@ a, li, .nav__container, .nav__container--mini,
     width: 100vw;
     height: calc(100vh - 20vh);
   }
+
+
+
+/*
+    MAIN
+*/
+/*Description section*/
+#section__description{
+    margin: 20px 16px;
+}
+
+.section__description--container{
+    flex-direction: column;
+    margin-top: 32px;
+    padding: 16px;
+}
+
+.section__description--title{
+    font-size: 48px;
+    padding: 4px;
+    margin-bottom: 8px;
+}
+
+.section__description--sub-title{
+    font-size: 24px;
+    padding: 4px;
+    margin-bottom: 8px;
+}
+
+
+/*Kit Section of main page*/
+
+#kit__card{
+    margin: 20px 16px;
+}
+
+.kit__card--container{
+    margin: 8px;
+    padding: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.kit__card--wrapper{
+    width: calc(100%/4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 16px;
+    margin: 16px;
+}
+
+.kit__card{
+    width: 360px;
+    height: 360px;
+    padding: 4px;
+    margin: 8px;
+}
